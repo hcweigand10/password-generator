@@ -34,7 +34,7 @@ function getParameters() {
   length = prompt("How long would you like it to be?\n(Between 8 and 128 characters)");
   if (length < 8) {
     alert("Are you trying to get hacked?\nTry again.");
-    getParameters();
+    return getParameters();
   } else if (length > 128) {
     alert("If you're looking for more security than 128 characters I suggest you look elsewhere than a two-week-old CS stduent.");
     return null;
